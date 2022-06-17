@@ -1,1 +1,1 @@
-Simple terminal style landing page
+Simple terminal style landing page for personal info
