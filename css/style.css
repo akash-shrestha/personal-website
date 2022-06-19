@@ -8,8 +8,13 @@
   --text-color: #00aa00;
 }
 body {
-  background-color: #333;
-  color: #ccc;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(51, 51, 51, 1) 50%,
+    rgba(0, 0, 0, 1) 85%
+  );
   font-family: "Roboto Mono", sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -73,25 +78,9 @@ nav ul li {
   overflow: hidden;
   position: relative;
 }
-.cssmarquee h1 {
-  animation: cssmarquee-left 10s alternate infinite;
-  color: turquoise;
-  font-size: 2em;
-  height: 100%;
-  line-height: 50px;
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  transform: translateX(100%);
-  width: 100%;
-}
-.cssmarquee h1:hover {
-  color: #333;
-}
 .cssmarquee h2 {
-  animation: cssmarquee-right 10s alternate infinite;
-  color: turquoise;
-  font-size: 2em;
+  animation: cssmarquee-left 10s alternate infinite;
+  color: rgb(91, 91, 91);
   height: 100%;
   line-height: 50px;
   margin: 0;
@@ -101,6 +90,20 @@ nav ul li {
   width: 100%;
 }
 .cssmarquee h2:hover {
+  color: #333;
+}
+.cssmarquee h3 {
+  animation: cssmarquee-right 10s alternate infinite;
+  color: rgb(91, 91, 91);
+  height: 100%;
+  line-height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(100%);
+  width: 100%;
+}
+.cssmarquee h3:hover {
   color: #333;
 }
 @keyframes cssmarquee-left {
@@ -179,6 +182,9 @@ nav ul li {
   /* IE 9 */
   /* Safari 3-8 */
 }
-.blink:hover {
+.blink-hover:hover {
   animation: blink 1s infinite;
+}
+.blink {
+  animation: blink 2s infinite;
 }
