@@ -74,7 +74,7 @@ nav ul li {
   position: relative;
 }
 .cssmarquee h1 {
-  animation: cssmarquee-left 10s linear infinite;
+  animation: cssmarquee-left 10s alternate infinite;
   color: turquoise;
   font-size: 2em;
   height: 100%;
@@ -89,8 +89,7 @@ nav ul li {
   color: #333;
 }
 .cssmarquee h2 {
-  animation-delay: 5s;
-  animation: cssmarquee-right 10s linear infinite;
+  animation: cssmarquee-right 10s alternate infinite;
   color: turquoise;
   font-size: 2em;
   height: 100%;
