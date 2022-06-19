@@ -1,105 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-
 :root {
   --text-color: #00aa00;
 }
-
 body {
-  font-family: 'Roboto Mono', sans-serif;
   background-color: #333;
   color: #ccc;
+  font-family: "Roboto Mono", sans-serif;
   font-size: 18px;
   line-height: 1.6;
 }
-
 h1 {
   color: var(--text-color);
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: 20px;
 }
-
 h2 {
   color: var(--text-color);
 }
-
 h3 {
   margin-bottom: 10px;
 }
-
 ul {
   list-style-type: none;
 }
-
 a {
   color: var(--text-color);
   text-decoration: none;
 }
-
 p {
   margin: 20px 0;
 }
-
 nav {
   width: 30%;
 }
-
 nav ul {
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
-
 nav ul li {
   color: var(--text-color);
   cursor: pointer;
 }
-
 .container {
-  max-width: 600px;
-  margin: auto;
-  height: 70vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 70vh;
   justify-content: center;
-  align-items: center;
+  margin: auto;
+  max-width: 600px;
 }
-
 .wb-body {
   background: #111;
   padding: 20px;
 }
-
 .hidden {
   display: none;
 }
-
 .cursor {
-  font-weight: 700;
   animation: 1s blink step-end infinite;
+  font-weight: 700;
 }
-
+.cssmarquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.cssmarquee h1 {
+  animation: cssmarquee-left 10s linear infinite;
+  color: turquoise;
+  font-size: 2em;
+  height: 100%;
+  line-height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(100%);
+  width: 100%;
+}
+.cssmarquee h1:hover {
+  color: #333;
+}
+.cssmarquee h2 {
+  animation-delay: 5s;
+  animation: cssmarquee-right 10s linear infinite;
+  color: turquoise;
+  font-size: 2em;
+  height: 100%;
+  line-height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  transform: translateX(100%);
+  width: 100%;
+}
+.cssmarquee h2:hover {
+  color: #333;
+}
+@keyframes cssmarquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes cssmarquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 @keyframes blink {
   from,
   to {
     color: transparent;
   }
-
   50% {
     color: var(--text-color);
   }
 }
-
-.highlight:hover {
-    -ms-transform: scale(1.5);  /* IE 9 */
-    -webkit-transform: scale(1.5);  /* Safari 3-8 */
-    transform: scale(1.5); 
+.color-mix:hover {
+  animation: color-rotate 5s infinite;
 }
+@keyframes color-rotate {
+  0% {
+    color: red;
+  }
+  20% {
+    color: yellow;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
+}
+@-webkit-keyframes color-mix {
+  0% {
+    color: red;
+  }
+  20% {
+    color: green;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+.magnify:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 
-
+  /* IE 9 */
+  /* Safari 3-8 */
+}
+.blink:hover {
+  animation: blink 1s infinite;
+}
