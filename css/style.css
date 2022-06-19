@@ -8,6 +8,7 @@
   --text-color: #00aa00;
 }
 body {
+  color: var(--text-color);
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
@@ -20,17 +21,13 @@ body {
   line-height: 1.6;
 }
 h1 {
-  color: var(--text-color);
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: 20px;
 }
-h2 {
-  color: var(--text-color);
-}
+
 h3 {
   margin-bottom: 10px;
-  color: var(--text-color);
 }
 ul {
   list-style-type: none;
@@ -41,6 +38,7 @@ a {
 }
 p {
   margin: 20px 0;
+  color: var(--text-color);
 }
 nav {
   width: 30%;
@@ -92,6 +90,7 @@ nav ul li {
 }
 .cssmarquee-top:hover {
   color: #333;
+  cursor: none;
 }
 .cssmarquee-bottom {
   animation: cssmarquee-right 10s alternate infinite;
@@ -106,6 +105,7 @@ nav ul li {
 }
 .cssmarquee-bottom:hover {
   color: #333;
+  cursor: none;
 }
 @keyframes cssmarquee-left {
   0% {
