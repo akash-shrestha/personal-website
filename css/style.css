@@ -24,6 +24,7 @@ h1 {
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: 20px;
+  animation: fadeIn 5s;
 }
 
 h3 {
@@ -144,7 +145,7 @@ nav ul li {
     color: yellow;
   }
   40% {
-    color: black;
+    color: rgb(34, 213, 180);
   }
   60% {
     color: blue;
@@ -164,7 +165,7 @@ nav ul li {
     color: yellow;
   }
   40% {
-    color: black;
+    color: rgb(34, 213, 180);
   }
   60% {
     color: blue;
@@ -193,4 +194,49 @@ nav ul li {
 
 .default {
   cursor: default;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
