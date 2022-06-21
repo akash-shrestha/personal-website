@@ -144,13 +144,13 @@ nav ul li {
     color: yellow;
   }
   40% {
-    color: green;
+    color: black;
   }
   60% {
     color: blue;
   }
   80% {
-    color: purple;
+    color: white;
   }
   100% {
     color: red;
@@ -161,16 +161,16 @@ nav ul li {
     color: red;
   }
   20% {
-    color: green;
+    color: yellow;
   }
   40% {
-    color: yellow;
+    color: black;
   }
   60% {
     color: blue;
   }
   80% {
-    color: orange;
+    color: white;
   }
   100% {
     color: red;
